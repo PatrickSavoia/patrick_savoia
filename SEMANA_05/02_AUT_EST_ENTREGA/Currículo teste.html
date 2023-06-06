@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///Users/patricksavoia/Downloads/curriculo%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Currículo</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Montserrat, Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333399;
+            margin-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 5px;
+        }
+
+        .section ul li strong {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .section p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Estilos para ícones */
+        .section ul li:before {
+            content: "\2022";
+            color: #333399;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Estilos para diferentes dispositivos */
+        @media (max-width: 767px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section ul li strong {
+                width: 100px;
+            }
+
+            .section ul li:before {
+                font-size: 10px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        }
+    </style>
+    <script src="./Currículo teste_files/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Animação de barra de menu
+            $('nav ul li a').click(function(e) {
+                e.preventDefault();
+                var targetSection = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(targetSection).offset().top
+                }, 1000);
+            });
+
+            // Outras animações
+            $('.section').hide().fadeIn(1500);
+            $('h1').animate({
+                opacity: 1,
+                fontSize: '36px'
+            }, 1000);
+            $('h2').hover(function() {
+  $(this).animate({
+    fontSize: '24px',
+    color: '#FF0000'
+  }, 500);
+}, function() {
+  $(this).animate({
+    fontSize: '18px',
+    color: '#333399'
+  }, 500);
+});
+
+$('.section ul li').hover(function() {
+  $(this).css('color', '#FF0000');
+}, function() {
+  $(this).css('color', '#333399');
+});
+});
+</script>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="file:///Users/patricksavoia/Downloads/curriculo%20(1).html#dados-pessoais">Dados Pessoais</a></li>
+    <li><a href="file:///Users/patricksavoia/Downloads/curriculo%20(1).html#experiencia-profissional">Experiência Profissional</a></li>
+    <li><a href="file:///Users/patricksavoia/Downloads/curriculo%20(1).html#formacao-academica">Formação Acadêmica</a></li>
+    <li><a href="file:///Users/patricksavoia/Downloads/curriculo%20(1).html#habilidades">Habilidades</a></li>
+    <li><a href="file:///Users/patricksavoia/Downloads/curriculo%20(1).html#idiomas">Idiomas</a></li>
+  </ul>
+</nav>
+
+<h1 style="opacity: 1; font-size: 36px;">Curriculo</h1>
+
+<div class="section" id="dados-pessoais" style="">
+  <h2 style="font-size: 18px;">Dados Pessoais</h2>
+  <ul>
+    <li style="color: rgb(51, 51, 153);"><strong>Nome:</strong> Patrick Savoia</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Data de Nascimento:</strong> 30/12/2004</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Endereço:</strong> Rua Monte Alegre, 838, São Paulo</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Telefone:</strong> (11) 99643-1802</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Email:</strong> patrick.savoia@sou.inteli.edu.br</li>
+  </ul>
+</div>
+
+<div class="section" id="experiencia-profissional" style="">
+  <h2 style="font-size: 18px;">Experiência Profissional</h2>
+  <ul>
+    <li style="color: rgb(51, 51, 153);">
+      <strong>Movimento juvenil Netzah Israel</strong><br>
+      <em>Cargo:</em> Monitor<br>
+      <em>Período:</em> Janeiro 2022 - Presente<br>
+      <em>Descrição:</em> Tomo conta de crianças durante os sábados (dia do descanso judaico)
+    </li>
+  </ul>
+</div>
+
+<div class="section" id="formacao-academica" style="">
+  <h2 style="font-size: 18.447px;">Formação Acadêmica</h2>
+  <ul>
+    <li style="color: rgb(51, 51, 153);">
+      <strong>Inteli (Instituto de Tecnologia e Liderança)</strong><br>
+      <em>Curso:</em> Bacharelado em Ciências da Computação<br>
+      <em>Período:</em> 2022 - presente
+    </li>
+  </ul>
+</div>
+
+<div class="section" id="habilidades" style="">
+  <h2 style="font-size: 18px;">Habilidades</h2>
+  <ul>
+    <li>HTML5</li>
+    <li style="color: rgb(51, 51, 153);">CSS3</li>
+    <li style="color: rgb(51, 51, 153);">JavaScript</li>
+    <li style="color: rgb(51, 51, 153);">Python</li>
+    <li style="color: rgb(51, 51, 153);">SQL</li>
+    <li style="color: rgb(51, 51, 153);">Git</li>
+  </ul>
+</div>
+
+<div class="section" id="idiomas" style="">
+  <h2 style="font-size: 18px;">Idiomas</h2>
+  <ul>
+    <li style="color: rgb(51, 51, 153);"><strong>Inglês:</strong> Fluente</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Hebraico:</strong> Fluente</li>
+    <li style="color: rgb(51, 51, 153);"><strong>Português:</strong> Fluente</li>
+    <li<strong>Espanhol: Intermediário
+
+</li<strong></ul>
+</div>
+
+
+</body></html>
